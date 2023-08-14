@@ -1,0 +1,10 @@
+.card-image {
+ background: url(../../../../assets/image/shalat/306309.jpg) no-repeat;
+ background-size: cover;
+ background-position: center;
+ width: 100%;
+ max-width: 400px;
+ height: 100%;
+ padding: 2rem;
+ mix-blend-mode: darken;
+}

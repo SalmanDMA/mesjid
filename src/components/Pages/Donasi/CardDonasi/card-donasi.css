@@ -1,0 +1,43 @@
+.card-donasi {
+ width: 350px;
+ height: 200px;
+ border-radius: 8px;
+ transition: transform 0.3s;
+}
+
+.card-donasi-image {
+ transition: all 0.3s ease;
+}
+
+.card-donasi:hover .card-donasi-image {
+ transform: translateY(35%);
+}
+
+.card-details-donasi {
+ display: none;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ padding: 24px;
+ opacity: 0;
+ border-radius: 12px;
+ text-align: center;
+ transition: all 0.3s;
+}
+
+.card-donasi:hover .card-details-donasi {
+ display: block;
+ animation: slide-in 0.5s ease forwards;
+}
+
+@keyframes slide-in {
+ from {
+  opacity: 0;
+  transform: translateY(0);
+ }
+ to {
+  opacity: 1;
+  transform: translateY(-20%);
+ }
+}
