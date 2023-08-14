@@ -1,0 +1,30 @@
+.my-style::before {
+ content: '';
+ position: absolute;
+ top: 3%;
+ left: 0;
+ background: url(../../../assets/image/home/graph.png) no-repeat;
+ width: 100%;
+ max-width: 500px;
+ height: 100%;
+ max-height: 500px;
+}
+
+.my-style::after {
+ content: '';
+ position: absolute;
+ top: 7%;
+ right: 0;
+ background: url(../../../assets/image/home/graph-right.png) no-repeat;
+ width: 100%;
+ max-width: 130px;
+ height: 100%;
+ max-height: 500px;
+}
+
+@media (max-width: 768px) {
+ .my-style::before,
+ .my-style::after {
+  display: none;
+ }
+}
